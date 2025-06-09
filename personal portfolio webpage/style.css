@@ -1,0 +1,25 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+body {
+    margin: 0;
+    padding-top: 60px;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    #navbar { padding: 0.5rem; }
+}
+

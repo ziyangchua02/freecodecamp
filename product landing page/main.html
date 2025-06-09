@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+</html>
+
+<body>
+    <header id="header">
+        <img id="header-img" src="logo.png" alt="Company Logo" />
+        <h1>Product Name</h1>
+        <nav id="nav-bar">
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+            <a class="nav-link" href="#about">About Us</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="hero">
+            <h2>Watch Our Product in Action</h2>
+            <video id="video" width="560" height="315" controls>
+                <source src="product-demo.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+        </section>
+
+        <section id="pricing">
+            <h2>Pricing</h2>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input placeholder="Enter your email" type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <input type="submit" id="submit" value="Send">
+                <script>
+                    document.getElementById('form').action = 'https://www.freecodecamp.com/email-submit';
+                    document.getElementById('form').method = 'POST';
+                </script>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+       
